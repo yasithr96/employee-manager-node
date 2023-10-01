@@ -25,7 +25,7 @@ app.get("/", (req: Request, res: Response) => {
 const port = process.env.PORT || 5000;
 
 //connection string from env
-const uri = process.env.MONGOOSE_URI || "";
+const uri = process.env.MONGODB_ATLAS_URI || "";
 
 app.listen(port, () => {
   console.log(`Server running on port : ${port}`);
